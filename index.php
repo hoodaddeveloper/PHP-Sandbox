@@ -1,22 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php include("header.php"); ?>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Demo mit Cookiebot und Matomo</title>
-  <link rel="stylesheet" href="style.css">
-  <!-- Cookiebot -->
-  <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="DEINE-ID-HIER" data-blockingmode="auto"
-    type="text/javascript"></script>
-</head>
+<main>
+  <h2>YouTube Video mit Datenschutzlayer</h2>
+  <div class="video-wrapper" data-cookieconsent="marketing">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/IxX_QHay02M" title="YouTube Video"
+      allowfullscreen></iframe>
+  </div>
 
-<body>
-  <header>
-    <h1>Meine Testseite</h1>
-    <p>Diese Seite zeigt die zentrale Einbindung von Cookiebot, Matomo und YouTube.</p>
-    <hr>
-  </header>
-</body>
+  <noscript>
+    <p>Bitte aktivieren Sie JavaScript und akzeptieren Sie Marketing-Cookies, um das Video zu sehen.</p>
+  </noscript>
+</main>
 
-</html>
+<?php include("footer.php"); ?>
